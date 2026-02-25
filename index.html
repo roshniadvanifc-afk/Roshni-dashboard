@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <header class="header">
+        <a href="#" class="logs">Portfolio</a>
+            <nav>
+                <ul class="nav-links">
+                     <li><a href="#home">HOME</a></li>
+                     <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#skills">SKILLS</a></li>
+                    <li><a href="#projects">PROJECTS</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home">
+        <div class="container">
+            
+            <h2>HOME</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis, suscipit a voluptatum, alias error dignissimos reiciendis consectetur odio tenetur natus, cum saepe eius assumenda! Quasi quaerat voluptate dignissimos dolor facilis!</p>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <img src="profile.jpg" alt="Profile Picture" class="profile-pic">
+            <h2>About Me</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis, suscipit a voluptatum, alias error dignissimos reiciendis consectetur odio tenetur natus, cum saepe eius assumenda! Quasi quaerat voluptate dignissimos dolor facilis!</p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill">HTML</div>
+                <div class="skill">CSS</div>
+                <div class="skill">JavaScript</div>
+                <div class="skill">React</div>
+                <div class="skill">Node.js</div>
+                <div class="skill">Git</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <div class="project" onclick="openModal('Project 1', 'A responsive e-commerce site built with React.')">
+                    <h3>Project 1</h3>
+                    <p>E-commerce Website</p>
+                </div>
+                <div class="project" onclick="openModal('Project 2', 'A task management app using Node.js and MongoDB.')">
+                    <h3>Project 2</h3>
+                    <p>Task Manager App</p>
+                </div>
+                <div class="project" onclick="openModal('Project 3', 'A portfolio site like this one, fully responsive.')">
+                    <h3>Project 3</h3>
+                    <p>Personal Portfolio</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact</h2>
+            <form id="contact-form">
+                <input type="text" placeholder="Name" required>
+                <input type="email" placeholder="Email" required>
+                <textarea placeholder="Message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </section>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h3 id="modal-title"></h3>
+            <p id="modal-description"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
